@@ -3,24 +3,25 @@ import { createCategory, createMenuItem, createPayment, createTakeaway, deleteCa
 
 const takeawayRouter = express.Router()
 
-router.post('/category', createCategory)
-router.get('/category', readCategory)
-router.put('/category', updateCategory)
-router.delete('/category', deleteCategory)
 
-router.post('/menu', createMenuItem)
-router.get('/menu', readMenuItem)
-router.update('/menu', updateMenuItem)
-router.delete('/menu', deleteMenuItem)
+takeawayRouter.post('/category', createCategory)
+takeawayRouter.get('/category', readCategory)
+takeawayRouter.put('/category', updateCategory)
+takeawayRouter.delete('/category', deleteCategory)
 
-router.post('/takeaway', createTakeaway)
-router.get('/takeaway', readTakeaway)
-router.put('/takeaway', updateTakeaway)
-router.delete('/takeaway', deleteTakeaway)
+takeawayRouter.post('/menu', createMenuItem)
+takeawayRouter.get('/menu', readMenuItem)
+takeawayRouter.put('/menu', updateMenuItem)
+takeawayRouter.delete('/menu', deleteMenuItem)
 
-router.post('/payment', createPayment)
-router.get('/payment', readPayment)
-router.put('/payment', updatePayment)
-router.delete('/payment', deletePayment)
+takeawayRouter.post('/takeaway', createTakeaway)
+takeawayRouter.get('/takeaway', readTakeaway)
+takeawayRouter.put('/takeaway', updateTakeaway)
+takeawayRouter.delete('/takeaway', deleteTakeaway)
+
+takeawayRouter.post('/payment', createPayment)
+takeawayRouter.get('/payment', readPayment)
+takeawayRouter.put('/payment', updatePayment)
+takeawayRouter.delete('/payment', deletePayment)
 
 export default takeawayRouter

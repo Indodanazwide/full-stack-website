@@ -3,10 +3,10 @@ import { createReservation, createTable, deleteReservation, deleteTable, readRes
 
 const reservationRouter = express.Router()
 
-router.post('/', createReservation)
-router.get('/', readReservation)
-router.put('/:id', updateReservation)
-router.delete('/:id', deleteReservation)
+reservationRouter.post('/', createReservation)
+reservationRouter.get('/', readReservation)
+reservationRouter.put('/:id', updateReservation)
+reservationRouter.delete('/:id', deleteReservation)
 
 reservationRouter.post('/table', createTable)
 reservationRouter.get('/table', readTable)

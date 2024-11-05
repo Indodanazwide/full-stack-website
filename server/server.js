@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000
 
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
-server.use(cors({ origin: '*' }))
+server.use(cors({ origin: 'http://localhost:5173/' }))
 
 server.use('/', router)
 
